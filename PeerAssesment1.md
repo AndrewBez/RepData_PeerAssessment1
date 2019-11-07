@@ -35,7 +35,7 @@ dailysum <- aggregate(steps ~ date,data=act,sum)
 hist(dailysum$steps, breaks = 10, xlab = 'Total Steps per Day',main = "Histogram of Total Number of Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PeerAssesment1_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 The mean total number of steps per day is
 
@@ -65,7 +65,7 @@ timemean <- aggregate(steps ~ interval,data = act,mean)
 plot(timemean$interval,timemean$steps, type = 'l',xlab = 'Time of Day',ylab = 'Average Number of Steps')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PeerAssesment1_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 The most active time of the day according to these calculations is
 
@@ -98,7 +98,7 @@ dailysum_nona <- aggregate(steps ~ date,data=act_nona,sum)
 hist(dailysum_nona $steps, breaks = 10, xlab = 'Total Steps per Day',main = "Histogram of Total Number of Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](PeerAssesment1_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 And it allows us to recalculate mean total number of steps per day
 
@@ -141,5 +141,5 @@ plot(timemean_wend$interval,timemean_wend$steps,type = 'l',col='red',xlab = 'Tim
 title('Weekend')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](PeerAssesment1_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
